@@ -1,0 +1,155 @@
+:root {
+    --title-size: 1.4em;
+    --icon-size: 18px;
+    --cursor: pointer;
+    --h1: 1.5em;
+    --h2: 1.25em;
+    --line-height: 1.8;
+}
+
+.view-header {
+    height: 60px;
+}
+
+.labeled-nav .mod-left-split>.workspace-tabs:nth-child(3) .workspace-tab-header .workspace-tab-header-inner-icon {
+    height: 30px;
+}
+
+.side-dock-ribbon-action svg {
+    height: 23px;
+    width: 23px;
+}
+
+.side-dock-ribbon-action {
+    height: 30px;
+}
+
+.workspace-ribbon {
+    flex: 0 0 50px;
+}
+
+.side-dock-ribbon-action {
+    padding: 8px 4px;
+    height: 38px;
+}
+
+.nav-folder-title {
+    line-height: 1.7;
+}
+
+.nav-file-title-content {
+    font-size: 14px;
+}
+
+body:not(.is-grabbing) .nav-folder-title svg {
+    transition: all .1s;
+}
+
+body:not(.is-grabbing) .nav-folder-title:hover svg {
+    background-color: var(--text-normal);
+}
+
+body:not(.is-grabbing) .nav-folder-title,
+body:not(.is-grabbing) .nav-file-title {
+    transition: all .1s;
+}
+
+body:not(.is-grabbing) .nav-folder-title:hover,
+body:not(.is-grabbing) .nav-file-title:hover {
+    background-color: #eee;
+}
+
+.titlebar-button svg {
+    width: 26px;
+    height: 26px;
+}
+
+body:not(.hider-frameless):not(.is-fullscreen):not(.is-mobile) {
+    --titlebar-height: 38px;
+}
+
+.mod-cm6 .cm-editor .HyperMD-header-2 {
+    padding-bottom: 0.4em;
+}
+
+.emoji {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.cm-fold-indicator {
+    margin-top: 3px;
+}
+
+.is-flashing {
+    box-shadow: 0 0px 0 4px var(--text-highlight-bg);
+}
+
+/* body max width */
+.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl) .cm-contentContainer {
+    max-width: 800px;
+}
+
+.markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width .cm-content {
+    max-width: 800px;
+}
+
+/* Toggl Track */
+.block-language-toggl .container {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.block-language-toggl .time-entry-list {
+    margin-top: 0 !important;
+}
+
+.block-language-toggl .time-entry-group-header div:first-child {
+    display: none !important;
+}
+
+.block-language-toggl .time-entry-group-header::before {
+    content: 'Toggl Track'
+}
+
+/* Yearly report heatmap */
+.heatmap-calendar-days li {
+    line-height: 1 !important;
+}
+
+.heatmap-calendar-days {
+    grid-gap: 0 !important;
+}
+
+.heatmap-calendar-boxes li {
+    width: 10px;
+    height: 10px;
+    min-height: 0;
+}
+
+/* Weekly report score */
+.score-class1 {
+    color:  #00E676;
+    font-weight: bold;
+}
+
+.score-class2 {
+    color: #FFC400;
+    font-weight: bold;
+}
+
+.score-class3 {
+    color:  #FF1744;
+    font-weight: bold;
+}
+
+.page-header-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.page-header-button.workspace\:undo-close-pane svg {
+    width: 26px;
+    height: 26px;
+}

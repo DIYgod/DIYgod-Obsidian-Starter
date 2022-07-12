@@ -1,0 +1,33 @@
+{
+  "command_timeout": 20,
+  "templates_folder": "Templates",
+  "templates_pairs": [
+    [
+      "getWeather",
+      "curl wttr.in/\"$(curl -s --header \"user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\" https://api.ip.sb/geoip | /opt/homebrew/bin/jq -r \".city\" | sed 's/ /%20/')\"\\?format=\"%l+%c%t\""
+    ],
+    [
+      "getMoon",
+      "curl wttr.in/\"$(curl -s --header \"user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\" https://api.ip.sb/geoip | /opt/homebrew/bin/jq -r \".city\" | sed 's/ /%20/')\"\\?format=\"%m\""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": true,
+  "shell_path": "/bin/zsh",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "Excerpts",
+      "template": "Templates/Metadata.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [
+    ""
+  ]
+}

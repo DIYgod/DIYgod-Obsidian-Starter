@@ -1,0 +1,18 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "spellcheck": true,
+  "attachmentFolderPath": "./Attachments",
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "autoConvertHtml": false,
+  "autoPairBrackets": true,
+  "autoPairMarkdown": true,
+  "pdfExportSettings": {
+    "pageSize": "Legal",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

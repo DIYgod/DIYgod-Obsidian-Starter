@@ -1,0 +1,14 @@
+{
+  "baseFontSize": 16,
+  "theme": "moonstone",
+  "translucency": false,
+  "cssTheme": "Things",
+  "enabledCssSnippets": [
+    "diygod",
+    "supercharged-links-gen"
+  ],
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
+  "baseFontSizeAction": false
+}

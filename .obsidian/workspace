@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "b6f72132867f3fe0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4ac2b886f60656a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Journal/2022/2022-07.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fef871ba41cff4ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "54b3ff0c084f7faa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "689ef3036afdac31",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "6e5038735bf95cd9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "NAS",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.5
+  },
+  "right": {
+    "id": "11772162384873f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1e630738fd8cd5a",
+        "type": "tabs",
+        "dimension": 44.52133794694348,
+        "children": [
+          {
+            "id": "57383c9664cb1aab",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "77f6f66c3525b6c6",
+        "type": "tabs",
+        "dimension": 55.47866205305652,
+        "children": [
+          {
+            "id": "dbf2a1f48a15b459",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Journal/2022/2022-07.md"
+              }
+            }
+          },
+          {
+            "id": "5784b28f8e515b16",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "f2e7bd35b36de81f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Journal/2022/2022-07.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "518d7136e6c19c93",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Journal/2022/2022-07.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "69cc398fa14e6caf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c48007e4ec6fa30e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "e5e22be238065526",
+            "type": "leaf",
+            "state": {
+              "type": "toggl-report",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 358.5
+  },
+  "active": "c4ac2b886f60656a",
+  "lastOpenFiles": [
+    "Journal/2022/2022-07.md",
+    "Journal/2022/2022.md",
+    "Journal/2022/W28/2022-W28.md",
+    "Journal/2022/W28/2022-07-12.md",
+    "Templates/Weekly.md",
+    "Templates/Monthly.md",
+    "Templates/Metadata.md",
+    "Templates/Daily.md",
+    "Journal/2022/W29/2022-07-12.md",
+    "Journal/2022/W28/2022-07-12 5.md"
+  ]
+}

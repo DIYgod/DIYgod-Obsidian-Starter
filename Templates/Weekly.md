@@ -1,0 +1,202 @@
+# {{date:gggg [Week] ww}}
+```dataviewjs
+window.pages = dv.pages(`"${dv.current().file.folder}"`).where(p => p.file.name.match(new RegExp(`${dv.current().file.name.split('-')[0]}-\\d{2}-\\d{2}`))).sort(p => p.file.name);
+```
+## Jornal List
+```dataviewjs
+dv.paragraph(window.pages.file.link.join(', '))
+```
+## Summary
+
+
+## OKR Tracker
+### O1 KR1: Being healthy
+😴 Sleep
+```dataviewjs
+// for >= 6.5 && <=8.5
+let count = 0;
+let total = 0;
+for (let page of window.pages) {
+    if (page['Sleep']) {
+	    count++;
+		if (page['Sleep'] >= 6.5 && page['Sleep'] <= 8.5) {
+		    total++;
+		}
+    }
+}
+const score = (total / count * 100).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+🍎 Healthy Eating
+```dataviewjs
+// for 1, 2, 3, 4, 5
+let count = 0;
+let total = 0;
+for (let page of window.pages) {
+	if (page['Healthy Eating']) {
+	    count++;
+	    total += (page['Healthy Eating'] - 1);
+	}
+}
+const score = (total / count * 100 / 4).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+😆 Mood
+```dataviewjs
+// for 1, 2, 3, 4, 5
+let count = 0;
+let total = 0;
+for (let page of window.pages) {
+	if (page['Mood']) {
+	    count++;
+	    total += (page['Mood'] - 1);
+	}
+}
+const score = (total / count * 100 / 4).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+🏃‍♂️ Exercise
+```dataviewjs
+// for any value
+let count = 0;
+for (let page of window.pages) {
+	if (page['Exercise']) {
+	    count++;
+	}
+}
+const score = (count / (window.pages.length / 2) * 100).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+### O1 KR2:  Being productive and organised
+```toggl
+LIST
+FROM <% moment(tp.file.title, 'gggg Week ww').weekday(0).format('YYYY-MM-DD') %> TO <% moment(tp.file.title, 'gggg Week ww').weekday(6).format('YYYY-MM-DD') %>
+GROUP BY PROJECT
+SORT DESC
+```
+⚡️ Productivity
+```dataviewjs
+// for 1, 2, 3, 4, 5
+let count = 0;
+let total = 0;
+for (let page of window.pages) {
+	if (page['Productivity']) {
+	    count++;
+	    total += (page['Productivity'] - 1);
+	}
+}
+const score = (total / count * 100 / 4).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+⌛️ Toggl coverage
+```dataviewjs
+// for time
+let count = 0;
+let total = 0;
+for (let page of window.pages) {
+	if (page['Toggl coverage']) {
+	    count++;
+	    const [hour, min, sec] = page['Toggl coverage'].split(':')
+	    total += (+hour + +min / 60 + +sec / 60 / 60)
+	}
+}
+console.log(total, count)
+const score = (total / count / 24 * 100).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+🗂 Zero Inbox
+```dataviewjs
+// for any value
+let count = 0;
+for (let page of window.pages) {
+	if (page['Zero Inbox']) {
+	    count++;
+	}
+}
+const score = (count / (window.pages.length) * 100).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+### O1 KR3: Maintaining and expanding hobbies
+```dataviewjs
+// for any value
+let count = 0;
+for (let page of window.pages) {
+	if (page['Reading'] || page['Vlog'] || page['Blogging'] || page['Painting']) {
+	    count++;
+	}
+}
+const score = (count / window.pages.length * 100).toFixed(2);
+dv.el('div', score + '%', {
+    cls: score > 80 ? 'score-class1' : score > 50 ? 'score-class2' : 'score-class3'
+});
+```
+
+## Statistics
+```dataviewjs
+const times = [];
+for (let page of window.pages) {
+	times.push(page['Sleep']);
+}
+
+const chartData = {
+    type: 'line',
+    data: {
+	    labels: window.pages.file.name.array(),
+        datasets: [{
+            label: 'Sleep Time',
+            data: times,
+            pointBackgroundColor: '#6c40d6',
+            borderColor: '#6c40d65c',
+            tension: 0.4,
+            spanGaps: true,
+        }],
+    },
+    options: {
+        scales: {
+            y: {
+                type: 'linear',
+                min: 2,
+                max: 13
+            }
+        }
+    }
+}
+
+window.renderChart(chartData, this.container);
+```
+```dataviewjs
+const times = [];
+for (let page of window.pages) {
+	times.push(parseInt(page['Exercise Time']));
+}
+
+const chartData = {
+    type: 'bar',
+    data: {
+	    labels: window.pages.file.name.array(),
+        datasets: [{
+            label: 'Exercise Time',
+            data: times,
+            backgroundColor: '#ff98005c',
+            borderColor: '#ff9800',
+            borderWidth: 2,
+        }],
+    },
+}
+
+window.renderChart(chartData, this.container);
+```

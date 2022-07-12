@@ -1,0 +1,128 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "📑",
+      "👨‍👩‍👧‍👦",
+      "👩🏻‍💻",
+      "book📖",
+      "📖"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": "Journal",
+        "icon": "🥳",
+        "for": "everything"
+      },
+      {
+        "rule": "Collection",
+        "icon": "🗺",
+        "for": "everything"
+      },
+      {
+        "rule": "Excerpts",
+        "icon": "📖",
+        "for": "everything"
+      },
+      {
+        "rule": "Coding",
+        "icon": "💻",
+        "for": "everything"
+      },
+      {
+        "rule": "Templates",
+        "icon": "⚙️",
+        "for": "everything"
+      },
+      {
+        "rule": "Lifeians",
+        "icon": "🌿",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-04",
+        "icon": "🕓",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-05",
+        "icon": "🕔",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-06",
+        "icon": "🕕",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-07",
+        "icon": "🕖",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-08",
+        "icon": "🕗",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-09",
+        "icon": "🕘",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-10",
+        "icon": "🕙",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-11",
+        "icon": "🕚",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-12",
+        "icon": "🕛",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-01",
+        "icon": "🕐",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-02",
+        "icon": "🕑",
+        "for": "everything"
+      },
+      {
+        "rule": "\\d{4}-03",
+        "icon": "🕒",
+        "for": "everything"
+      },
+      {
+        "rule": "Life$",
+        "icon": "🎼",
+        "for": "everything"
+      },
+      {
+        "rule": "Ongoing",
+        "icon": "✨",
+        "for": "everything"
+      }
+    ],
+    "extraPadding": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "Work": "👩🏻‍💻",
+  "Lifeians/Customer Relationship Management.md": "👨‍👩‍👧‍👦",
+  "Reading": "📖",
+  "Excerpts": "📑"
+}

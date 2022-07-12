@@ -1,0 +1,48 @@
+{
+  "cookies": [
+    {
+      "name": "wr_gid",
+      "value": "274494269"
+    },
+    {
+      "name": "wr_vid",
+      "value": "24918745"
+    },
+    {
+      "name": "wr_skey",
+      "value": "R4Tdw0mz"
+    },
+    {
+      "name": "wr_pf",
+      "value": "0"
+    },
+    {
+      "name": "wr_rt",
+      "value": "web@zRSTyPJrcw_OLC1P61d_WL"
+    },
+    {
+      "name": "wr_localvid",
+      "value": "08f32c40717c3ad908fb566"
+    },
+    {
+      "name": "wr_name",
+      "value": "DIYgod（微信弃用，tg同名）"
+    },
+    {
+      "name": "wr_avatar",
+      "value": "https://mmhead.c2c.wechat.com/mmhead/g9RQicMD01M0EmEkAw6DAznwZdeSiaJ3wfBjMs8gr02dz0Nq0zJVics1A/0"
+    },
+    {
+      "name": "wr_gender",
+      "value": "1"
+    }
+  ],
+  "noteLocation": "Reading",
+  "lastCookieTime": 1656854925400,
+  "isCookieValid": true,
+  "user": "DIYgod（微信弃用，tg同名）",
+  "template": "---\nisbn: {{metaData.isbn}}\ncategory: {{metaData.category}}\nlastReadDate: {{metaData.lastReadDate}}\n---\n# 元数据\n> [!abstract] {{metaData.title}}\n> - ![ {{metaData.title}}|200]({{metaData.cover}})\n> - 书名： {{metaData.title}}\n> - 作者： {{metaData.author}}\n> - 简介： {{metaData.intro}}\n> - 出版时间 {{metaData.publishTime}}\n> - ISBN： {{metaData.isbn}}\n> - 分类： {{metaData.category}}\n> - 出版社： {{metaData.publisher}}\n\n# 高亮划线\n{% for chapter in chapterHighlights %}\n## {{chapter.chapterTitle}}\n{% for highlight in chapter.highlights %}\n{% if highlight.reviewContent %}{% else %}\n- 📌 {{ highlight.markText |trim }} ^{{highlight.bookmarkId}}\n    - ⏱ {{highlight.createTime}}{% endif %} {% endfor %}{% endfor %}\n# 读书笔记\n{% for chapter in bookReview.chapterReviews %}{% if chapter.reviews or chapter.chapterReview %}\n## {{chapter.chapterTitle}}\n{% if  chapter.chapterReviews %}{% for chapterReview in chapter.chapterReviews %}\n### 章节评论 No.{{loop.index}}\n- {{chapterReview.content}} ^{{chapterReview.reviewId}}\n    - ⏱ {{chapterReview.createTime}} {% endfor%}{%endif %}{% if chapter.reviews %}{%for review in chapter.reviews %}\n### 划线评论\n- 📌 {{review.abstract |trim }}  ^{{review.reviewId}}\n    - 💭 {{review.content}}\n    - ⏱ {{review.createTime}}\n{% endfor %} {%endif %} {% endif %} {% endfor %}\n# 本书评论\n{% if bookReview.bookReviews %}{% for bookReview in bookReview.bookReviews %}\n## 书评 No.{{loop.index}} \n{{bookReview.mdContent}} ^{{bookReview.reviewId}}\n⏱ {{bookReview.createTime}}\n{% endfor%}{% endif %}",
+  "noteCountLimit": -1,
+  "subFolderType": "-1",
+  "fileNameType": "BOOK_NAME"
+}

@@ -1,0 +1,42 @@
+{
+  "enabledButtons": [
+    {
+      "id": "workspace:toggle-pin",
+      "icon": "filled-pin",
+      "name": "Toggle pin",
+      "showButtons": "both"
+    },
+    {
+      "id": "workspace:copy-path",
+      "icon": "duplicate-glyph",
+      "name": "Copy file path",
+      "showButtons": "both"
+    }
+  ],
+  "desktop": true,
+  "titleLeft": [
+    {
+      "id": "workspace:undo-close-pane",
+      "icon": "undo-glyph",
+      "name": "Undo close pane"
+    },
+    {
+      "id": "oz-clear-unused-images:clear-images-obsidian",
+      "icon": "broken-link",
+      "name": "Clear Unused Images: Clear Unused Images"
+    },
+    {
+      "id": "oz-clear-unused-images:clear-unused-attachments",
+      "icon": "broken-link",
+      "name": "Clear Unused Images: Clear Unused Attachments"
+    },
+    {
+      "id": "file-explorer:reveal-active-file",
+      "icon": "navigate-glyph",
+      "name": "File explorer: Reveal active file in navigation"
+    }
+  ],
+  "titleRight": [],
+  "titleCenter": [],
+  "paneRelief": false
+}

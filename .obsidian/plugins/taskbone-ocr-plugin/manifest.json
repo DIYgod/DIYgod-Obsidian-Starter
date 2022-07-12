@@ -1,0 +1,9 @@
+{
+	"id": "taskbone-ocr-plugin",
+	"name": "Taskbone OCR",
+	"version": "1.0.0",
+	"minAppVersion": "0.12.3",
+	"description": "Extract text from images and make it available for search.",
+	"author": "Dominik Schlund",
+	"isDesktopOnly": false
+}
