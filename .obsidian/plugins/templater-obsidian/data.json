@@ -1,21 +1,12 @@
 {
   "command_timeout": 20,
   "templates_folder": "Templates",
-  "templates_pairs": [
-    [
-      "getWeather",
-      "curl wttr.in/\"$(curl -s --header \"user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\" https://api.ip.sb/geoip | /opt/homebrew/bin/jq -r \".city\" | sed 's/ /%20/')\"\\?format=\"%l+%c%t\""
-    ],
-    [
-      "getMoon",
-      "curl wttr.in/\"$(curl -s --header \"user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\" https://api.ip.sb/geoip | /opt/homebrew/bin/jq -r \".city\" | sed 's/ /%20/')\"\\?format=\"%m\""
-    ]
-  ],
+  "templates_pairs": [],
   "trigger_on_file_creation": true,
   "auto_jump_to_cursor": false,
   "enable_system_commands": true,
   "shell_path": "/bin/zsh",
-  "user_scripts_folder": "",
+  "user_scripts_folder": "Templates/Scripts",
   "enable_folder_templates": true,
   "folder_templates": [
     {
